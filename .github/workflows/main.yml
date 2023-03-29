@@ -4,19 +4,8 @@ deploy_for_serverless.yml
 name: 'deploy_for_serverless'
 
 on:
-  watch:
-    types: started
-  workflow_dispatch:
-    inputs:
-      enc_server_disabled:
-        description: '填1禁用心跳远程加密服务器(默认启用，不使用直播心跳请无视，需要注意启用状态下会上传直播心跳数据到第三方服务器)，不清楚请不要填写'
-        required: false
-        default: ''
-      CRON:
-        description: '指定cron定时表达式，默认每天中午12点启动脚本(注意腾讯云函数使用7位cron北京时间，阿里云函数使用6位cron UTC时间)，不清楚请不要填写'
-        required: false
-        default: ''
-      REGION:
+  wat      enc_server_disabled:
+
         description: '指定部署区域，腾讯云函数默认部署在  ap-guangzhou(广州)，阿里云函数默认部署在  cn-shanghai(上海)，不清楚请不要填写'
         required: false
         default: ''
