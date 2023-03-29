@@ -1,15 +1,6 @@
 
 deploy_for_serverless.yml
 
-
-
-
-
-
-
-
-
-
 name: 'deploy_for_serverless'
 
 on:
